@@ -1,0 +1,188 @@
+body {
+  font-size: $fs-base;
+}
+
+p {
+  font-size: $fs-base;
+}
+
+h1 {
+  font-size: $fs-4xxl;
+}
+
+h2 {
+  font-size: $fs-3xxl;
+  letter-spacing: 0.05em;
+}
+
+h3 {
+  font-size: $fs-2xxl;
+}
+
+h4 {
+  font-size: $fs-xxl;
+}
+
+h5 {
+  font-size: $fs-xl;
+}
+
+h6 {
+  font-size: $fs-lg;
+}
+
+a {
+  color: $fm-black;
+}
+
+a:hover {
+  color: $fm-green;
+}
+
+.b-fm-green {
+  background-color: $fm-green !important;
+  color: $fm-white !important;
+}
+
+.b-fm-grey {
+  background-color: $fm-grey !important;
+}
+
+.b-fm-white {
+  background-color: $fm-white !important;
+}
+
+.b-fm-black {
+  background-color: $fm-black !important;
+  color: $fm-white !important;
+}
+
+.c-fm-green {
+  color: $fm-green !important;
+}
+
+.c-fm-grey {
+  color: $fm-grey !important;
+}
+
+.c-fm-white {
+  color: $fm-white !important;
+}
+
+.c-fm-black {
+  color: $fm-black !important;
+}
+
+.border-b {
+  border-bottom: 1px solid $fm-white;
+}
+
+.w-70,
+.w-75 {
+  width: 90%;
+  padding: 0 5px;
+  margin: 0 auto;
+}
+
+.w-80,
+.w-85 {
+  width: 93%;
+  padding: 0 5px;
+  margin: 0 auto;
+}
+
+.w-90,
+.w-95 {
+  width: 96%;
+  padding: 0 5px;
+  margin: 0 auto;
+}
+
+.float-l {
+  float: left;
+}
+
+.float-r {
+  float: right;
+}
+
+.align-c {
+  text-align: center;
+}
+
+.align-l {
+  text-align: left;
+}
+
+.align-r {
+  text-align: right;
+}
+
+.dis-flex {
+  display: block;
+}
+
+.mxy-auto {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.btn {
+  padding: 0.65rem 1.75rem;
+  border-radius: 1.35rem;
+  text-transform: uppercase;
+  color: $fm-white;
+  width: 150px;
+  background: $fm-green;
+  border: 1px solid $fm-green;
+}
+
+.btn--outline {
+  color: $fm-green;
+  background: transparent;
+  border: 1px solid $fm-green;
+}
+
+/* Large Mobile 568px++ */
+@media (min-width: 568px) {
+  body {
+    font-size: $fs-lg;
+  }
+}
+
+/* Tablets 768px and more */
+@media (min-width: 768px) {
+  .w-70 {
+    width: 70%;
+  }
+
+  .w-75 {
+    width: 75%;
+  }
+
+  .w-80 {
+    width: 80%;
+  }
+
+  .w-85 {
+    width: 85%;
+  }
+
+  .w-90 {
+    width: 90%;
+  }
+
+  .w-95 {
+    width: 95%;
+  }
+
+  .dis-flex {
+    display: -webkit-box !important; /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box !important; /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox !important; /* TWEENER - IE 10 */
+    display: -webkit-flex !important; /* NEW - Chrome */
+    display: flex !important; /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  }
+}

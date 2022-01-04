@@ -4,31 +4,38 @@ body {
 
 p {
   font-size: $fs-base;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 h1 {
-  font-size: $fs-4xxl;
+  font-size: $fs-5xxl;
+  font-family: "IBM Plex Serif", serif;
 }
 
 h2 {
-  font-size: $fs-3xxl;
+  font-size: $fs-4xxl;
   letter-spacing: 0.05em;
+  font-family: "IBM Plex Serif", serif;
 }
 
 h3 {
-  font-size: $fs-2xxl;
+  font-size: $fs-3xxl;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 h4 {
-  font-size: $fs-xxl;
+  font-size: $fs-2xxl;
+  font-family: "IBM Plex Serif", serif;
 }
 
 h5 {
-  font-size: $fs-xl;
+  font-size: $fs-xxl;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 h6 {
-  font-size: $fs-lg;
+  font-size: $fs-xl;
+  font-family: "IBM Plex Serif", serif;
 }
 
 a {
@@ -37,6 +44,22 @@ a {
 
 a:hover {
   color: $fm-green;
+}
+
+img {
+  width: 100%;
+}
+
+.f-plex-serif {
+  font-family: "IBM Plex Serif", serif;
+}
+
+.f-plex-sans {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+.f-plex-mono {
+  font-family: "IBM Plex Mono", monospace;
 }
 
 .b-fm-green {
@@ -73,8 +96,14 @@ a:hover {
   color: $fm-black !important;
 }
 
-.border-b {
-  border-bottom: 1px solid $fm-white;
+.border-w {
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid $fm-white;
+}
+
+.border-g {
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid $fm-green;
 }
 
 .w-70,
@@ -129,20 +158,96 @@ a:hover {
   margin-left: auto;
 }
 
+.hidden-mobile {
+  display: none;
+}
+
+.link {
+  font-family: "IBM Plex Mono", monospace;
+  text-decoration: underline;
+}
+
 .btn {
+  font-family: "IBM Plex Mono", monospace;
   padding: 0.65rem 1.75rem;
   border-radius: 1.35rem;
   text-transform: uppercase;
-  color: $fm-white;
-  width: 150px;
+  width: 160px;
   background: $fm-green;
-  border: 1px solid $fm-green;
+  color: $fm-white;
+  border: 2px solid $fm-green;
+  transition: all 0.5s ease-out;
+  -moz-transition: all 0.6s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+}
+
+.bt--white {
+  background: $fm-white;
+  color: $fm-green;
+  border: 2px solid $fm-white;
 }
 
 .btn--outline {
   color: $fm-green;
   background: transparent;
-  border: 1px solid $fm-green;
+  border: 2px solid $fm-green;
+}
+
+.btn--white-outline {
+  color: $fm-white;
+  background: transparent;
+  border: 2px solid $fm-white;
+}
+
+.btn:hover {
+  background: $fm-orange;
+  border: 2px solid $fm-orange;
+  color: white;
+}
+
+.main-page {
+  margin-top: 8rem;
+}
+
+/* Home page */
+.sec-home {
+  margin-top: 11vh;
+}
+
+.sec-home h1 {
+  font-size: $fs-6xxl;
+}
+
+#video-container {
+  overflow: hidden;
+  height: 100vh;
+  position: relative;
+  top: 0;
+  margin-top: -25vh;
+}
+
+.hero-vid-container {
+  width: 100%;
+  height: 65vh;
+  overflow: hidden;
+}
+
+.video-content {
+  position: absolute;
+  bottom: 10%;
+  left: 2.5%;
+  text-align: center;
+}
+
+.sec-banner {
+  position: absolute;
+  width: 100%;
+  top: 0;
+}
+
+.fran-logo img {
+  width: 100%;
 }
 
 /* Large Mobile 568px++ */
@@ -184,5 +289,58 @@ a:hover {
     display: -ms-flexbox !important; /* TWEENER - IE 10 */
     display: -webkit-flex !important; /* NEW - Chrome */
     display: flex !important; /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  }
+
+  .row-eq-height {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+  }
+
+  .flex-col-reverse {
+    flex-direction: row-reverse;
+  }
+
+  .mxy-auto {
+    margin: auto;
+  }
+
+  .hidden-mobile {
+    display: initial;
+  }
+
+  .hidden-desktop {
+    display: none;
+  }
+
+  .sec-banner {
+    background: $fm-white;
+  }
+
+  .hero-vid-container {
+    width: 110%;
+    height: 90vh;
+    overflow: hidden;
+    margin-left: -2.5%;
+  }
+
+  .sec-home {
+    height: 90vh;
+    min-height: 400px;
+    margin-top: 11vh;
+  }
+
+  #video-container {
+    overflow: hidden;
+    height: 130vh;
+    position: relative;
+    top: 0;
+    margin-top: -20vh;
+  }
+
+  .sec-home h1 {
+    font-size: $fs-7xxl;
   }
 }

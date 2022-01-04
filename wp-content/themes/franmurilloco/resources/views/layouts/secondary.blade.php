@@ -7,9 +7,7 @@
 <div class="wrap" role="document">
   <div class="content">
     <main class="main-page">
-      <div class="container">
-        @yield('content')
-      </div>
+      @yield('content')
     </main>
     @if (App\display_sidebar())
       <aside class="sidebar">

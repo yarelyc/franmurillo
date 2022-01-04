@@ -1,6 +1,6 @@
 <footer class="content-info b-fm-black py-3 py-md-4">
 
-  <div class="w-85 border-b">
+  <div class="w-85 border-w">
     <div class="w-85 py-3 py-md-4">
 
       <div class="row">
@@ -18,5 +18,6 @@
 
     </div>
   </div>
+  </br>
 
 </footer>

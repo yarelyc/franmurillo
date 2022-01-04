@@ -5,12 +5,13 @@
 
 #menu-footer a {
   color: $fm-white;
-  padding: 0.25rem 0;
+  padding: 0.35rem 0;
   text-transform: uppercase;
   display: block;
   text-decoration: underline;
+  font-size: $fs-xs;
 }
 
 .footer-logo {
-  max-width: 200px;
+  max-width: 180px;
 }

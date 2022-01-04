@@ -1,10 +1,31 @@
-<header class="banner">
+<header class="sec-banner banner py-3 py-md-4">
   <div class="container">
-    <a class="brand" href="{{ home_url('/') }}">{{ get_bloginfo('name', 'display') }}</a>
-    <nav class="nav-primary">
-      @if (has_nav_menu('primary_navigation'))
-        {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav']) !!}
-      @endif
-    </nav>
+
+
+      <div class="row row-eq-height">
+        <div class="col-md-3 dis-flex">
+
+          <div class="mxy-auto">
+
+            <a class="fran-logo" href="{{ home_url('/') }}"><img src="http://franmurilloco.local/wp-content/uploads/2022/01/Franmurillo-logo-green.png"></a>
+
+          </div>
+
+        </div>
+        <div class="col-md-9 dis-flex">
+
+          <div class="mxy-auto">
+            <nav class="nav-primary">
+              @if (has_nav_menu('primary_navigation'))
+                {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav']) !!}
+              @endif
+            </nav>
+          </div>
+        </div>
+      </div>
+
+
+
+
   </div>
 </header>

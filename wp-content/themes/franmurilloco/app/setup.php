@@ -57,6 +57,11 @@ add_action('after_setup_theme', function () {
      */
     add_theme_support('post-thumbnails');
 
+    //Add image hero page
+    add_image_size('feature-square', 600, 500, true);
+    add_image_size('feature-medium', 600, 400, true);
+    add_image_size('feature-large', 1200, 650, false);
+
     /**
      * Enable HTML5 markup support
      * @link https://developer.wordpress.org/reference/functions/add_theme_support/#html5

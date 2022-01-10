@@ -21,7 +21,7 @@
                   <img src="{{ $single_work->img->thumb }}" alt="{{$single_work->img->alt}}"
                        title="{{ $single_work->img->title }}">
 
-                  <p class="f-plex-mono"> {{ $single_work->name }}</p>
+                  <p class="f-plex-mono py-2"> {{ $single_work->name }}</p>
                 </div>
               </a>
 

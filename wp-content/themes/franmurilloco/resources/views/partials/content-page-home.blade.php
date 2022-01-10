@@ -1,9 +1,9 @@
 <section class="sec-home b-fm-green">
   <div class="row row-eq-height">
-    <div class="col-md-6 dis-flex py-2">
+    <div class="col-md-6 dis-flex py-3">
       <div class="mxy-auto">
 
-        <div class="w-80">
+        <div class="w-80 p-5 p-md-1">
           <h1 class="c-fm-white p-5 p-md-4">Hi,</br>
             I'm Fran.</br>
             Let's work together.</br>

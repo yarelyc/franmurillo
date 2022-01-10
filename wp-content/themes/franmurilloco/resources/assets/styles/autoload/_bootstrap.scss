@@ -8,10 +8,10 @@
 // Set the container width, and override it for fixed navbars in media queries.
 $container-max-widths: (
   sm: 540px,
-  md: 720px,
+  md: 710px,
   lg: 960px,
-  xl: 1200px,
-  xxl: 1420px
+  xl: 1160px,
+  xxl: 1300px
 );
 
 @if $enable-grid-classes {

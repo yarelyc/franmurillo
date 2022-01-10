@@ -1,5 +1,6 @@
 body {
   font-size: $fs-base;
+  color: $fm-light-grey;
 }
 
 p {
@@ -8,33 +9,33 @@ p {
 }
 
 h1 {
-  font-size: $fs-5xxl;
+  font-size: $fs-4xxl;
   font-family: "IBM Plex Serif", serif;
 }
 
 h2 {
-  font-size: $fs-4xxl;
+  font-size: $fs-3xxl;
   letter-spacing: 0.05em;
   font-family: "IBM Plex Serif", serif;
 }
 
 h3 {
-  font-size: $fs-3xxl;
+  font-size: $fs-2xxl;
   font-family: "IBM Plex Sans", sans-serif;
 }
 
 h4 {
-  font-size: $fs-2xxl;
+  font-size: $fs-xxl;
   font-family: "IBM Plex Serif", serif;
 }
 
 h5 {
-  font-size: $fs-xxl;
+  font-size: $fs-xl;
   font-family: "IBM Plex Sans", sans-serif;
 }
 
 h6 {
-  font-size: $fs-xl;
+  font-size: $fs-lg;
   font-family: "IBM Plex Serif", serif;
 }
 
@@ -48,6 +49,11 @@ a:hover {
 
 img {
   width: 100%;
+  height: auto;
+}
+
+ul {
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .f-plex-serif {
@@ -86,6 +92,10 @@ img {
 
 .c-fm-grey {
   color: $fm-grey !important;
+}
+
+.c-fm-light-grey {
+  color: $fm-light-grey !important;
 }
 
 .c-fm-white {
@@ -167,10 +177,14 @@ img {
   text-decoration: underline;
 }
 
-.btn {
+.btn,
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
   font-family: "IBM Plex Mono", monospace;
   padding: 0.65rem 1.75rem;
-  border-radius: 1.35rem;
+  border-radius: 1.45rem;
   text-transform: uppercase;
   width: 160px;
   background: $fm-green;
@@ -194,7 +208,8 @@ img {
   border: 2px solid $fm-green;
 }
 
-.btn--white-outline {
+.btn--white-outline,
+#gform_submit_button_1 {
   color: $fm-white;
   background: transparent;
   border: 2px solid $fm-white;
@@ -206,13 +221,35 @@ img {
   color: white;
 }
 
+/*** Forms ***/
+.gform_footer {
+  float: right;
+}
+
+.gform_wrapper.gravity-theme input[type=text],
+.gform_wrapper.gravity-theme input[type=email] {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid $fm-white !important;
+  color: $fm-white !important;
+}
+
+.gform_wrapper.gravity-theme input::placeholder {
+  color: $fm-white !important;
+  font-family: "IBM Plex Mono", monospace;
+}
+
+.gform_wrapper.gravity-theme .gfield {
+  padding: 1.25rem 0;
+}
+
 .main-page {
-  margin-top: 8rem;
+  margin-top: 100px;
 }
 
 /* Home page */
 .sec-home {
-  margin-top: 11vh;
+  margin-top: 100px;
 }
 
 .sec-home h1 {
@@ -248,6 +285,12 @@ img {
 
 .fran-logo img {
   width: 100%;
+  max-width: 180px;
+}
+
+/** Work Page **/
+.work-role ul {
+  margin-left: -1.1rem !important;
 }
 
 /* Large Mobile 568px++ */
@@ -255,10 +298,18 @@ img {
   body {
     font-size: $fs-lg;
   }
+
+  .fran-logo img {
+    max-width: 220px;
+  }
 }
 
 /* Tablets 768px and more */
 @media (min-width: 768px) {
+  .fran-logo img {
+    max-width: 300px;
+  }
+
   .w-70 {
     width: 70%;
   }
@@ -317,6 +368,7 @@ img {
 
   .sec-banner {
     background: $fm-white;
+    box-shadow: 0 3px 13px #00000029;
   }
 
   .hero-vid-container {
@@ -329,7 +381,7 @@ img {
   .sec-home {
     height: 90vh;
     min-height: 400px;
-    margin-top: 11vh;
+    margin-top: 102px;
   }
 
   #video-container {

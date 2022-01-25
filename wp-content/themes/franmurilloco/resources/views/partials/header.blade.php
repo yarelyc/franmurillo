@@ -14,13 +14,21 @@
         </div>
         <div class="col-md-9 dis-flex">
 
-          <div class="mxy-auto">
-            <nav class="nav-primary">
-              @if (has_nav_menu('primary_navigation'))
-                {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav']) !!}
-              @endif
-            </nav>
+          <div class="menu-btn">
+            <a class="btn-open" href="javascript:void(0)"></a>
           </div>
+
+          <div class="overlay">
+            <div class="menu">
+              <nav class="nav-primary">
+                @if (has_nav_menu('primary_navigation'))
+                  {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav']) !!}
+                @endif
+              </nav>
+            </div>
+
+          </div>
+
         </div>
       </div>
 

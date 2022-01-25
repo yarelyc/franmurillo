@@ -41,6 +41,11 @@ h6 {
 
 a {
   color: $fm-black;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.05s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 a:hover {
@@ -190,10 +195,6 @@ button,
   background: $fm-green;
   color: $fm-white;
   border: 2px solid $fm-green;
-  transition: all 0.5s ease-out;
-  -moz-transition: all 0.6s ease-out;
-  -webkit-transition: all 0.5s ease-out;
-  -o-transition: all 0.5s ease-out;
 }
 
 .bt--white {
@@ -221,6 +222,53 @@ button,
   color: white;
 }
 
+.vp-controls-wrapper {
+  display: none;
+}
+
+/** Primary Navigation **/
+.menu-btn {
+  position: absolute;
+  top: 6px;
+  right: 20px;
+  z-index: 999;
+  display: inline;
+  font-size: 32px;
+}
+
+.menu-btn a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.btn-open::after {
+  color: #333;
+  content: "\f394";
+  font-family: "Font Awesome 5 Free", sans-serif;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition-property: all 0.2s linear;
+}
+
+.btn-open:hover::after {
+  color: #34b484;
+}
+
+.btn-close::after {
+  color: #fff;
+  content: "\f0c9";
+  font-family: "Font Awesome 5 Free", sans-serif;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition-property: all 0.2s linear;
+}
+
+.btn-close:hover::after {
+  color: #34b484;
+}
+
 /*** Forms ***/
 .gform_footer {
   float: right;
@@ -244,7 +292,12 @@ button,
 }
 
 .main-page {
-  margin-top: 100px;
+  margin-top: 70px;
+  min-height: 72vh;
+}
+
+.sec-lets-work-page {
+  min-height: 72vh;
 }
 
 /* Home page */
@@ -254,6 +307,7 @@ button,
 
 .sec-home h1 {
   font-size: $fs-6xxl;
+  margin: 1em 0;
 }
 
 #video-container {
@@ -293,6 +347,21 @@ button,
   margin-left: -1.1rem !important;
 }
 
+/** Zoom Image **/
+.img-zoom {
+  overflow: hidden;
+}
+
+.img-zoom img {
+  transition: transform 0.5s ease;
+  filter: brightness(95%);
+}
+
+.img-zoom:hover img {
+  transform: scale(1.25);
+  filter: brightness(105%);
+}
+
 /* Large Mobile 568px++ */
 @media (min-width: 568px) {
   body {
@@ -308,6 +377,10 @@ button,
 @media (min-width: 768px) {
   .fran-logo img {
     max-width: 300px;
+  }
+
+  .main-page {
+    margin-top: 100px;
   }
 
   .w-70 {
@@ -369,13 +442,15 @@ button,
   .sec-banner {
     background: $fm-white;
     box-shadow: 0 3px 13px #00000029;
+    position: fixed;
+    z-index: 5;
   }
 
   .hero-vid-container {
-    width: 110%;
+    width: 105%;
     height: 90vh;
     overflow: hidden;
-    margin-left: -2.5%;
+    margin-left: -3%;
   }
 
   .sec-home {
@@ -390,9 +465,11 @@ button,
     position: relative;
     top: 0;
     margin-top: -20vh;
+    margin-left: -50%;
   }
 
   .sec-home h1 {
+    margin: 0;
     font-size: $fs-7xxl;
   }
 }

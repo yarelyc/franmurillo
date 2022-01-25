@@ -17,8 +17,10 @@
 
               <div class="mxy-auto">
 
-                <img src="@php echo $work->img->url; @endphp" alt="@php echo $work->img->alt @endphp"
-                     title="@php echo$work->img->title  @endphp">
+                <div class="img-zoom">
+                  <img src="@php echo $work->img->url; @endphp" alt="@php echo $work->img->alt @endphp"
+                       title="@php echo$work->img->title  @endphp">
+                </div>
 
                 <br>
               </div>

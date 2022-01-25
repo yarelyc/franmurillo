@@ -2,9 +2,8 @@
 
 @section('content')
 
-  <section class="py-5">
+  <section class="py-2 py-md-5">
 
-    </br>
     <div class="container-md py-1 py-md-2">
 
       <div class="w-95">
@@ -18,8 +17,10 @@
               <a href="{{ $single_work->permalink }}">
                 <div>
 
-                  <img src="{{ $single_work->img->thumb }}" alt="{{$single_work->img->alt}}"
-                       title="{{ $single_work->img->title }}">
+                  <div class="img-zoom">
+                    <img src="{{ $single_work->img->thumb }}" alt="{{$single_work->img->alt}}"
+                         title="{{ $single_work->img->title }}">
+                  </div>
 
                   <p class="f-plex-mono py-2"> {{ $single_work->name }}</p>
                 </div>

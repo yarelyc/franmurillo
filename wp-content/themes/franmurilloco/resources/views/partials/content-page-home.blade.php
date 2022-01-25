@@ -33,9 +33,8 @@
 
         <div class="hero-vid-container">
 
-          <video id="video-container" poster="http://franmurilloco.local/wp-content/uploads/2022/01/short-video.jpg"
-                 autoplay loop>
-            <source src="http://franmurilloco.local/wp-content/uploads/2022/01/short-video.mp4" type="video/mp4"/>
+          <video id="video-container" poster="http://franmurilloco.local/wp-content/uploads/2022/01/website-b-roll-1080p.mp4" autoplay loop>
+            <source src="http://franmurilloco.local/wp-content/uploads/2022/01/website-b-roll-1080p.mp4" type="video/mp4"/>
           </video>
 
           <div class="video-content w-90 py-2 py-md-4 hidden-desktop">

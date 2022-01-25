@@ -3,6 +3,10 @@ export default {
     // JavaScript to be fired on the home page
   },
   finalize() {
-    // JavaScript to be fired on the home page, after the init JS
+    $('.multiple-items').slick({
+      infinite: true,
+      slidesToShow: 3,
+      slidesToScroll: 3,
+    });
   },
 };

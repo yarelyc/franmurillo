@@ -50,30 +50,21 @@
 
     <section class="sec-work-gallery">
 
+      <div class="multiple-items">
 
-      <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-
-            <div class="w-90">
-              <img src="http://franmurilloco.local/wp-content/uploads/2022/01/olinday-slider.jpg" alt="">
-
-            </div>
+          <div class="p-2">
+            <img src="http://franmurilloco.local/wp-content/uploads/2022/01/olinday-slider.jpg" alt="">
           </div>
-          <div class="carousel-item">
-            <div class="w-90">
-              <img src="http://franmurilloco.local/wp-content/uploads/2022/01/olinday-slider.jpg" alt="">
 
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="w-90">
-              <img src="http://franmurilloco.local/wp-content/uploads/2022/01/olinday-slider.jpg" alt="">
-
-            </div>
-          </div>
+        <div class="p-2">
+          <img src="http://franmurilloco.local/wp-content/uploads/2022/01/olinday-slider.jpg" alt="">
+        </div>
+        <div class="p-2">
+          <img src="http://franmurilloco.local/wp-content/uploads/2022/01/olinday-slider.jpg" alt="">
         </div>
       </div>
+
+
 
     </section>
 

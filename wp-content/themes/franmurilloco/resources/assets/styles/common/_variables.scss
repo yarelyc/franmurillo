@@ -1,10 +1,25 @@
 /** Import Bootstrap functions */
 @import "~bootstrap/scss/functions";
 
-$theme-colors: (
-  primary: #525ddc
-);
-
 /** Bootstrap navbar fix (https://git.io/fADqW) */
 $navbar-dark-toggler-icon-bg: none;
 $navbar-light-toggler-icon-bg: none;
+
+$fm-green : #5d7261;
+$fm-grey : #dedede;
+$fm-light-grey : #4d4d4d;
+$fm-white : #fff;
+$fm-black : #000;
+$fm-orange: #f25449;
+
+$fs-xs :  0.85rem;
+$fs-base : 1rem;
+$fs-lg : 1.15rem;
+$fs-xl : 1.3rem;
+$fs-xxl :  1.5rem;
+$fs-2xxl : 1.75rem;
+$fs-3xxl : 2rem;
+$fs-4xxl : 2.25rem;
+$fs-5xxl : 2.5rem;
+$fs-6xxl : 3rem;
+$fs-7xxl : 4rem;

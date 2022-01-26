@@ -60,7 +60,7 @@ add_action('after_setup_theme', function () {
     //Add image hero page
     add_image_size('feature-square', 600, 500, true);
     add_image_size('feature-medium', 600, 400, true);
-    add_image_size('feature-large', 1200, 650, false);
+    add_image_size('feature-large', 1500, 800, false);
 
     /**
      * Enable HTML5 markup support

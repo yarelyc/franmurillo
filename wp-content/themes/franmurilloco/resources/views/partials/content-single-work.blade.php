@@ -29,41 +29,42 @@
             </div>
             <div class="col-md-6 dis-flex py-2">
               <div class="my-auto">
-              <div class="m-auto m-md-0">
+                <div class="m-auto m-md-0">
 
 
-                <div class="work-content pr-3 py-3 py-md-5">
-                  <p class="f-plex-mono c-fm-green">My role:</p>
+                  <div class="work-content pr-3 py-3 py-md-5">
+                    <p class="f-plex-mono c-fm-green">My role:</p>
 
-                  <div class="work-role">
-                    @php echo $work->role; @endphp
+                    <div class="work-role">
+                      @php echo $work->role; @endphp
+                    </div>
+
                   </div>
 
                 </div>
-
               </div>
             </div>
+            </br>
           </div>
-          </br>
-        </div>
     </section>
 
     <section class="sec-work-gallery">
 
-      <div class="multiple-items">
-
-          <div class="p-2">
-            <img src="http://franmurilloco.local/wp-content/uploads/2022/01/olinday-slider.jpg" alt="">
+      @if($work->gallery)
+        <div class="multiple-items">
+          @foreach($work->gallery as $image)
+            <div class="p-2">
+             @php echo wp_get_attachment_image($image, 'feature-large'); @endphp
+            </div>
+          @endforeach
+        </div>
+        <div class="w-85">
+          <div class="float-right">
+            <p class="slide-counter f-plex-mono c-fm-light-grey"></p>
           </div>
-
-        <div class="p-2">
-          <img src="http://franmurilloco.local/wp-content/uploads/2022/01/olinday-slider.jpg" alt="">
         </div>
-        <div class="p-2">
-          <img src="http://franmurilloco.local/wp-content/uploads/2022/01/olinday-slider.jpg" alt="">
-        </div>
-      </div>
 
+      @endif
 
 
     </section>

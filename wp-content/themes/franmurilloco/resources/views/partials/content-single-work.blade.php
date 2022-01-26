@@ -97,11 +97,11 @@
           <div class="row row-eq-height">
             <div class="col-md-6 dis-flex">
               <div>
+                <div class="img-zoom">
+                <img src="@php echo $work->solution_image->url; @endphp" alt="@php echo $work->solution_image->alt @endphp"
+                     title="@php echo$work->solution_image->title  @endphp">
 
-                <img src="@php echo $work->img->url; @endphp" alt="@php echo $work->img->alt @endphp"
-                     title="@php echo$work->img->title  @endphp">
-
-
+                </div>
               </div>
             </div>
             <div class="col-md-6 dis-flex">
@@ -113,7 +113,7 @@
                   </div>
 
                   </br>
-                  <a href="#" class="btn">Let's Work</a>
+                  <a href="/lets-talk/" class="btn">Let's Work</a>
                 </div>
               </div>
             </div>

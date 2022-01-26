@@ -6,9 +6,9 @@ namespace App\Traits;
 trait Image {
 
 
-    protected function getImage($id, $size='feature-medium') {
+    protected function getImage($id, $name, $size='feature-medium') {
 
-        $image = get_field('project_image', $id);
+        $image = get_field($name, $id);
 
         //vars
         $url = $image['url'];

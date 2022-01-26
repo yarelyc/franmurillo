@@ -15,11 +15,12 @@ class SingleWork extends Controller
     {
 
         return (object)[
-            'img' => $this->getImage(get_the_ID(), 'feature-square') ?? null,
+            'img' => $this->getImage(get_the_ID(), 'project_image', 'feature-square') ?? null,
             'gallery' => get_field('gallery_images', get_the_ID()) ?? null,
             'role' => get_field('role', get_the_ID()) ?? null,
             'brief' => get_field('brief', get_the_ID()) ?? null,
-            'solution' => get_field('solution', get_the_ID()) ?? null
+            'solution' => get_field('solution', get_the_ID()) ?? null,
+            'solution_image' => $this->getImage(get_the_ID(), 'the_solution_image', 'feature-medium') ?? null
 
         ];
     }

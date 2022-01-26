@@ -1,9 +1,9 @@
-#menu-footer {
+#menu-footer-1 {
   display: block;
   text-align: right;
 }
 
-#menu-footer a {
+#menu-footer-1 a {
   color: $fm-white;
   padding: 0.35rem 0;
   text-transform: uppercase;
@@ -14,4 +14,47 @@
 
 .footer-logo {
   max-width: 180px;
+}
+
+.header-footer-navigation {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+#menu-footer.header-footer-inner li a {
+  padding: 1.5rem 0.25rem;
+  font-size: 0.85rem;
+  color: $fm-white;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+#menu-footer.header-footer-inner li a:hover {
+  color: $fm-orange;
+}
+
+#menu-footer.header-footer-inner {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header-line hr {
+  border-color: white;
+}
+
+@media (min-width: 568px) {
+  #menu-footer.header-footer-inner li a {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  #menu-footer.header-footer-inner li a {
+    padding: 1rem 3rem;
+  }
 }

@@ -37,12 +37,12 @@
 
           <div class=" py-3 py-4">
             <div class="row py-1 py-3">
-              <div class="col-6">
+              <div class="col-sm-6 py-2">
                 @if($about->work_link)
                   <a href="@php echo $about->work_link['url'];  @endphp" class="btn" alt="@php echo $about->work_link['title'];  @endphp">@php echo $about->work_link['title'];  @endphp</a>
                 @endif
               </div>
-              <div class="col-6">
+              <div class="col-sm-6 py-2">
                 @if($about->lets_talk_link)
                   <a href="@php echo $about->lets_talk_link['url'];  @endphp" class="btn  btn--outline" alt="@php echo $about->lets_talk_link['title'];  @endphp">@php echo $about->lets_talk_link['title'];  @endphp</a>
                 @endif

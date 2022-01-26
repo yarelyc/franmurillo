@@ -26,7 +26,7 @@ class ArchiveWork extends Controller {
             $work = array_map(function($project){
 
                 return (object)[
-                    'img' => $this->getImage($project, 'feature-medium'),
+                    'img' => $this->getImage($project, 'project_image','feature-medium'),
                     'name' => get_the_title($project),
                     'permalink' => get_permalink($project),
 

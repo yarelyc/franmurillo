@@ -188,13 +188,14 @@ button,
 [type="reset"],
 [type="submit"] {
   font-family: "IBM Plex Mono", monospace;
-  padding: 0.65rem 1.75rem;
+  padding: 0.45rem 1.75rem;
   border-radius: 1.45rem;
   text-transform: uppercase;
-  width: 160px;
+  width: 150px;
   background: $fm-green;
   color: $fm-white;
   border: 2px solid $fm-green;
+  font-size: 0.9rem;
 }
 
 .bt--white {
@@ -226,47 +227,17 @@ button,
   display: none;
 }
 
-/** Primary Navigation **/
-.menu-btn {
-  position: absolute;
-  top: 6px;
-  right: 20px;
-  z-index: 999;
-  display: inline;
-  font-size: 32px;
+#menu-primary a {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 1.5rem;
+  text-transform: uppercase;
 }
 
-.menu-btn a {
-  display: inline-block;
+#menu-primary a:hover {
+  font-family: "IBM Plex Serif", serif;
+  color: $fm-orange;
   text-decoration: none;
-}
-
-.btn-open::after {
-  color: #333;
-  content: "\f394";
-  font-family: "Font Awesome 5 Free", sans-serif;
-  -webkit-transition: all 0.2s linear;
-  -moz-transition: all 0.2s linear;
-  -o-transition: all 0.2s linear;
-  transition-property: all 0.2s linear;
-}
-
-.btn-open:hover::after {
-  color: #34b484;
-}
-
-.btn-close::after {
-  color: #fff;
-  content: "\f0c9";
-  font-family: "Font Awesome 5 Free", sans-serif;
-  -webkit-transition: all 0.2s linear;
-  -moz-transition: all 0.2s linear;
-  -o-transition: all 0.2s linear;
-  transition-property: all 0.2s linear;
-}
-
-.btn-close:hover::after {
-  color: #34b484;
+  font-style: italic;
 }
 
 /*** Forms ***/
@@ -301,6 +272,10 @@ button,
 }
 
 /* Home page */
+.mobile-intro {
+  min-height: 85vh;
+}
+
 .sec-home {
   margin-top: 70px;
 }
@@ -380,6 +355,20 @@ button,
     max-width: 300px;
   }
 
+  #menu-primary a {
+    font-size: 2.5rem;
+  }
+
+  .btn,
+  button,
+  [type="button"],
+  [type="reset"],
+  [type="submit"] {
+    width: 160px;
+    padding: 0.65rem 1.75rem;
+    font-size: 1rem;
+  }
+
   .main-page {
     margin-top: 100px;
   }
@@ -444,7 +433,7 @@ button,
     background: $fm-white;
     box-shadow: 0 3px 13px #00000029;
     position: fixed;
-    z-index: 5;
+    z-index: 1;
     min-height: 100px;
   }
 

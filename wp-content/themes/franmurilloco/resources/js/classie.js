@@ -65,7 +65,7 @@ var classie = {
   has: hasClass,
   add: addClass,
   remove: removeClass,
-  toggle: toggleClass
+  toggle: toggleClass,
 };
 
 // transport

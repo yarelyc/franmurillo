@@ -1,12 +1,6 @@
-@extends('layouts.app')
+@extends('layouts.secondary')
 
 @section('content')
-  @include('partials.page-header')
-
-  @if (!have_posts())
-    <div class="alert alert-warning">
-      {{ __('Sorry, but the page you were trying to view does not exist.', 'sage') }}
-    </div>
-    {!! get_search_form(false) !!}
-  @endif
+ <div class="error-background" style="background-image: url('http://franmurilloco.local/wp-content/uploads/2022/01/404-Page.jpg')">
+ </div>
 @endsection

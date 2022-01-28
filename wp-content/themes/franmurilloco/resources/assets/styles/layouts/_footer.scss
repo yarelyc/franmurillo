@@ -18,7 +18,7 @@
 
 .header-footer-navigation {
   position: absolute;
-  bottom: 10%;
+  bottom: 15%;
   left: 50%;
   transform: translate(-50%, 0);
 }
@@ -36,7 +36,6 @@
 }
 
 #menu-footer.header-footer-inner {
-  display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -46,10 +45,21 @@
   border-color: white;
 }
 
+@media (min-height: 568px) {
+  .header-footer-navigation {
+    display: block;
+    bottom: 22%;
+  }
+}
+
 @media (min-width: 568px) {
   #menu-footer.header-footer-inner li a {
     padding: 1rem 2rem;
     font-size: 1rem;
+  }
+
+  #menu-footer.header-footer-inner {
+    display: flex;
   }
 }
 

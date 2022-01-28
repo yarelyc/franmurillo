@@ -276,18 +276,30 @@ button,
   min-height: 85vh;
 }
 
+.home .main {
+  overflow: hidden;
+}
+
 .sec-home {
   margin-top: 70px;
 }
 
 .sec-home h1 {
-  font-size: $fs-6xxl;
+  font-size: $fs-3xxl;
   margin: 1em 0;
+}
+
+.sec-home-equal {
+  margin: 0 !important;
+}
+
+.mobile-video {
+  padding: 0;
 }
 
 #video-container {
   overflow: hidden;
-  height: 100vh;
+  height: 120vh;
   position: relative;
   top: 0;
   margin-top: -25vh;
@@ -295,7 +307,7 @@ button,
 
 .hero-vid-container {
   width: 100%;
-  height: 65vh;
+  height: 75vh;
   overflow: hidden;
 }
 
@@ -313,14 +325,26 @@ button,
   min-height: 70px;
 }
 
-.fran-logo img {
+.fran-svg {
   width: 100%;
   max-width: 180px;
+}
+
+.fran-log {
+  padding: 1em;
 }
 
 /** Work Page **/
 .work-role ul {
   margin-left: -1.1rem !important;
+}
+
+.error-background {
+  min-height: 400px;
+  height: 80vh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
 }
 
 /** Zoom Image **/
@@ -338,25 +362,58 @@ button,
   filter: brightness(105%);
 }
 
+@media (min-height: 390px) and (min-width: 580px) {
+  .sec-home h1 {
+    font-size: $fs-5xxl;
+  }
+}
+
+@media (min-height: 568px) {
+  .sec-home h1 {
+    font-size: $fs-6xxl;
+  }
+
+  .hero-vid-container {
+    width: 100%;
+    height: 65vh;
+  }
+
+  #video-container {
+    height: 90vh;
+    margin-top: -25vh;
+    margin-left: -33vh;
+  }
+}
+
+@media (min-height: 768px) {
+  .sec-home h1 {
+    font-size: $fs-7xxl;
+  }
+}
+
 /* Large Mobile 568px++ */
 @media (min-width: 568px) {
   body {
     font-size: $fs-lg;
   }
 
-  .fran-logo img {
+  .fran-svg {
     max-width: 220px;
   }
 }
 
 /* Tablets 768px and more */
 @media (min-width: 768px) {
-  .fran-logo img {
+  .sec-home-equal {
+    margin: initial;
+  }
+
+  .fran-svg {
     max-width: 300px;
   }
 
   #menu-primary a {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   .btn,
@@ -439,8 +496,7 @@ button,
 
   .hero-vid-container {
     width: 105%;
-    height: 90vh;
-    overflow: hidden;
+    height: 102vh;
     margin-left: -3%;
   }
 
@@ -457,6 +513,17 @@ button,
     top: 0;
     margin-top: -20vh;
     margin-left: -50%;
+  }
+}
+
+@media (min-width: 992px) {
+  #menu-primary a {
+    font-size: 2.5rem;
+  }
+
+  .mobile-video {
+    padding-right: 15px;
+    padding-left: 15px;
   }
 
   .sec-home h1 {

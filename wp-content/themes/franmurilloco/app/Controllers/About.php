@@ -8,7 +8,6 @@ class About extends Controller
 {
     public function about()
     {
-
         return (object)[
             'about' => get_field('about', get_the_ID()) ?? null,
             'enjoys' => get_field('enjoys', get_the_ID()) ?? null,

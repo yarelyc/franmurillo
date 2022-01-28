@@ -27,3 +27,6 @@
 <script type="text/javascript" src="{!! get_template_directory_uri()!!}/js/classie.js"></script>
 <script type="text/javascript" src="{!! get_template_directory_uri()!!}/js/overlay.js"></script>
 
+<script>
+  AOS.init();
+</script>

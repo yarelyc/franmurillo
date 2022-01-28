@@ -7,7 +7,6 @@
     <section class="sec-work-single">
       <div class="container-md py-2 py-md-5">
         <div class="w-95">
-
           <h1 class="border-g c-fm-green pt-1 pt-md-4">{{ get_the_title() }}</h1>
           <h6 class="f-plex-mono c-light-grey">Brand Development</h6>
           <br>
@@ -54,7 +53,7 @@
         <div class="multiple-items">
           @foreach($work->gallery as $image)
             <div class="p-2">
-             @php echo wp_get_attachment_image($image, 'feature-large'); @endphp
+              @php echo wp_get_attachment_image($image, 'feature-large'); @endphp
             </div>
           @endforeach
         </div>
@@ -98,8 +97,8 @@
             <div class="col-md-6 dis-flex">
               <div>
                 <div class="img-zoom">
-                <img src="@php echo $work->solution_image->url; @endphp" alt="@php echo $work->solution_image->alt @endphp"
-                     title="@php echo$work->solution_image->title  @endphp">
+                  <img src="@php echo $solution->image->url; @endphp" alt="@php echo $solution->image->alt @endphp"
+                       title="@php echo $solution->image->title  @endphp">
 
                 </div>
               </div>
@@ -109,11 +108,27 @@
                 <div class="w-90 mx-0 work-content pr-3 py-3 py-md-5">
                   <p class="f-plex-mono c-fm-green">The solution:</p>
                   <div class="work-solution">
-                    @php echo $work->solution; @endphp
+                    @php echo $solution->intro; @endphp
                   </div>
 
                   </br>
-                  <a href="/lets-talk/" class="btn">Let's Work</a>
+
+                  <div class="row">
+                    <div class="col-md-6 py-2">
+                      @if($solution->bold_link)
+                        <a target="{!! $solution->bold_target  !!}" href="{!! $solution->bold_link  !!}"
+                           class="btn">{!! $solution->bold_title  !!}</a>
+                      @endif
+                    </div>
+
+                    <div class="col-md-6 py-2">
+                      @if($solution->outline_target)
+                      <a target="{!! $solution->outline_target  !!}" href="{!! $solution->outline_link  !!}"
+                         class="btn btn--outline">{!! $solution->outline_title  !!}</a>
+                      @endif
+                    </div>
+                  </div>
+
                 </div>
               </div>
             </div>

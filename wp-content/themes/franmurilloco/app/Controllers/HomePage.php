@@ -24,8 +24,8 @@ class HomePage extends Controller
 
     public function outline_link () {
         return (object)[
-            'url' => get_field('bold_url', get_the_ID())['url']  ?? null,
-            'title' => get_field('bold_url', get_the_ID())['title']?? null,
+            'url' => get_field('outline_url', get_the_ID())['url']  ?? null,
+            'title' => get_field('outline_url', get_the_ID())['title']?? null,
         ];
     }
 

@@ -15,5 +15,6 @@
   <link rel="icon" type="image/png" sizes="16x16" href="{!! get_site_url()!!}/wp-content/themes/franmurilloco/dist/images/favicon_io/favicon-16x16.png">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/vivus@latest/dist/vivus.min.js"></script>
   @php wp_head() @endphp
 </head>

@@ -2,7 +2,7 @@
 <html {!! get_language_attributes() !!}>
 @include('partials.head')
 <body @php body_class() @endphp>
-@php do_action('partials.loader') @endphp
+
 @include('partials.navigation')
 <div class="body-container">
 
